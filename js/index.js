@@ -8,4 +8,7 @@ require(["config"], function(){
 	require(["load"], function(){
 		console.log("main.......")
 	});
+	require(["main"], function(){
+		console.log("main.......")
+	});
 });

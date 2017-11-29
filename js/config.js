@@ -1,13 +1,21 @@
 require.config({
 	baseUrl : "/",
 	paths : {
-		"jquery" : "httpshop213.v.ev123.netvip_shop213.html/lib/jquery/jquery-1.9.1.min",//["https://code.jquery.com/jquery-1.12.4.min.js","lib/jquery/jquery-1.1.12.4"]
-		"cookie" : "httpshop213.v.ev123.netvip_shop213.html/lib/jquery_plugins/jquery.cookie",
-		"load" : "httpshop213.v.ev123.netvip_shop213.html/js/loadHeaderFooter",
-		"zoom" : "httpshop213.v.ev123.netvip_shop213.html/lib/jquery_plugins/jquery.elevateZoom-3.0.8.min"
+		"jquery" : "project3/lib/jquery/jquery-1.9.1.min",//["https://code.jquery.com/jquery-1.12.4.min.js","lib/jquery/jquery-1.1.12.4"]
+		"cookie" : "project3/lib/jquery_plugins/jquery.cookie",
+		"load" : "project3/js/loadHeaderFooter",
+		"main" : "project3/js/loadmain",
+		"carousel" : "project3/lib/jquery_plugins/jquery.bxslider",
+		"zoom" : "project3/lib/jquery_plugins/jquery.elevateZoom-3.0.8.min"
+		
 	},
 	shim : {
 		"zoom" : {
+			deps : ["jquery"]
+		}
+	},
+	shim : {
+		"carousel" : {
 			deps : ["jquery"]
 		}
 	}
