@@ -5,6 +5,7 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<script src="lib/requirejs/require.js" data-main="js/index"></script>
 	</head>
 	<body>
 		<div id="header"></div>
@@ -12,11 +13,30 @@
 			
 		</div>
 		<div id="footer"></div>
-		<!--<script src="lib/jquery/jquery-1.12.4.min.js"></script>-->
-		<!--<script src="js/index.js">
+		<!--lunbo_top-->
+		<script type="text/html" id="hot_search">
+			<div class="hot">				
+				{{each prods as pro}}
+					<div><a href="javascript:void(0)">{{pro.prod}}</a></div>
+				{{/each}}				
+			</div>
+				
 			
-		</script>-->
-		<script src="lib/requirejs/require.js" data-main="js/index"></script>
+		</script>
+		<!--侧栏弹出-->
+		<script type="text/html" id="list_template">
+			{{each types as msg}}
+				<div class="type">
+					<h4>{{msg.title}}</h4>
+					<div class="detal">
+						{{each msg.type as tp}
+							<a>{{tp.id}}</a>
+						{{/each}}
+					</div>
+				</div>
+			{{/each}}			
+		</script>
+		
 
 	</body>
 </html>
