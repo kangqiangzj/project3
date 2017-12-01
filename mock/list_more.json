@@ -1,7 +1,7 @@
 {
 	"status" : 1,
 	"message" : "success",
-	"data" : [
+	"data1" : [
 		{
 			"title" : "潮流饰品",
 			"type" : [
@@ -37,7 +37,7 @@
 				{"name" : "礼品文具"},
 				{"name" : "工艺礼品"},
 				{"name" : "美妆礼品"},
-				{"name" : "军刀用具"}
+				{"name" : "军刀"}
 			]
 		},
 		{
@@ -81,6 +81,95 @@
 				{"name" : "旅行包"},
 				{"name" : "拉杆包"},
 				{"name" : "拉杆箱"}
+			]
+		}
+	],
+	"data2" : [
+		{"news" : "夏品199减100，送演唱会票..."},
+		{"news" : "全球购英国馆上线，低至9.9元..."},
+		{"news" : "阅读指数帮您选好书好碟..."},
+		{"news" : "每日享折扣 京东品质游..."},
+		{"news" : "夏日炎炎，水果冰淇淋DIY..."}
+	],
+	"data3" :[
+		{
+			"prod" : "冲锋衣"
+		},
+		{
+			"prod" : "速干T恤"
+		},
+		{
+			"prod" : "速干裤"
+		},
+		{
+			"prod" : "溯溪鞋"
+		},
+		{
+			"prod" : "登山鞋"
+		},
+		{
+			"prod" : "潜水服"
+		}
+	],
+	"data4" :[
+		{
+			"title" : "运动鞋服",
+			"prod" :[
+				{"id" : 1, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 2, "img" : "/project3/images/_2234719.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX 750   经典鞋  43码 S79194","price":828},
+				{"id" : 3, "img" : "/project3/images/_4309763.jpg","title":"步惊云运动鞋跑步鞋男鞋2016夏季新款网布网面网鞋男透气休闲鞋气垫慢跑鞋","price":698},
+				{"id" : 4, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 5, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 6, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 7, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 8, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 9, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 10, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698}
+			]
+		},
+		{
+			"title" : "户外生活",
+			"prod" :[
+				{"id" : 1, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 2, "img" : "/project3/images/_2234719.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX 750   经典鞋  43码 S79194","price":828},
+				{"id" : 3, "img" : "/project3/images/_4309763.jpg","title":"步惊云运动鞋跑步鞋男鞋2016夏季新款网布网面网鞋男透气休闲鞋气垫慢跑鞋","price":698},
+				{"id" : 4, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 5, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 6, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 7, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 8, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 9, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 10, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698}
+			]
+		},
+		{
+			"title" : "健身体育",
+			"prod" :[
+				{"id" : 1, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 2, "img" : "/project3/images/_2234719.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX 750   经典鞋  43码 S79194","price":828},
+				{"id" : 3, "img" : "/project3/images/_4309763.jpg","title":"步惊云运动鞋跑步鞋男鞋2016夏季新款网布网面网鞋男透气休闲鞋气垫慢跑鞋","price":698},
+				{"id" : 4, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 5, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 6, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 7, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 8, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 9, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 10, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698}
+			]
+		},
+		{
+			"title" : "骑行运动",
+			"prod" :[
+				{"id" : 1, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 2, "img" : "/project3/images/_2234719.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX 750   经典鞋  43码 S79194","price":828},
+				{"id" : 3, "img" : "/project3/images/_4309763.jpg","title":"步惊云运动鞋跑步鞋男鞋2016夏季新款网布网面网鞋男透气休闲鞋气垫慢跑鞋","price":698},
+				{"id" : 4, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 5, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 6, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 7, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 8, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 9, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698},
+				{"id" : 10, "img" : "/project3/images/_1796172.jpg","title":"阿迪达斯ADIDAS三叶草 2016春季 男子系列ZX FLUX 经典鞋 43.5码 S79095","price":698}
 			]
 		}
 	]

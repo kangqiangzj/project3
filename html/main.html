@@ -1,13 +1,20 @@
 <div class="lunbo_top">
-	<div class="left">
-		<img src="images/hot.png"/>
-		<div class="left0">
+	<div class="box">
+		<div class="left">
+			<img src="images/hot.png"/>
+			<div class="left0">
+				
+			</div>
+		</div>
+		<div class="right">
+			<div class="left_f">
+					<input type="text" id="search" placeholder="搜索商品"/>			
+				<div class="btn"></div>
+			</div>
 			
 		</div>
 	</div>
-	<div class="right">
-		
-	</div>
+	
 </div>
 <div class="banner1">
 	<div class="box">
@@ -18,7 +25,7 @@
 				</div>
 				<ul>
 					<li class="show"><img src="images/lefticon/201608_57a40c2197c3e.png"/><a href="javascript:viod(0)">旅行 Trave</a></li>
-					<li><img src="images/lefticon/201608_57a40c115df70.png"/><a href="javascript:viod(0)">自驾专区</a></li>
+					<li class="show2"><img src="images/lefticon/201608_57a40c115df70.png"/><a href="javascript:viod(0)">自驾专区</a></li>
 					<li><img src="images/lefticon/201608_57a40bf2a74b9.png"/><a href="javascript:viod(0)">水上运动 Aquatic</a></li>
 					<li><img src="images/lefticon/201608_57a40be40c46f.png"/><a href="javascript:viod(0)">露营 Camping</a></li>
 					<li><img src="images/lefticon/201608_57a40bd413e7d.png"/><a href="javascript:viod(0)">登山 Hike 20L</a></li>
@@ -40,7 +47,36 @@
 			</div>
 		</div>
 		<div class="banner1_right">
+			<div class="top">
+				<h3>品质咨讯</h3>
+				<div class="news_show">
+					
+				</div>
+			</div>
 			
+			<div class="bottom">
+				<div class="h">
+					<dl>
+						<dt><img src="images/righticon/2344707_3095066.jpg"/><span></span></dt>
+						<dd><a href="javascript:void(0)">话费充值</a></dd>
+					</dl>
+					<dl>
+						<dt><img src="images/righticon/2344706_1051396.jpg"/><span></span></dt>
+						<dd><a href="javascript:void(0)">积分商城</a></dd>
+					</dl>
+					<dl>
+						<dt><img src="images/righticon/2344705_6009408.jpg"/><span></span></dt>
+						<dd><a href="javascript:void(0)">抽奖中心</a></dd>
+					</dl>
+				</div>
+				<div class="m">
+					<img src="images/_3792964.png"/>
+				</div>
+				<div class="b">
+					<h2>冲锋衣专场</h2>
+					<p>满减不封顶</p>
+				</div>
+			</div>
 		</div>
 	</div>
 	</div>
@@ -54,3 +90,54 @@
 		</div>
 	</div>
 </div>
+<div class="contain">
+	
+</div>
+<!--lunbo_top-->
+<script type="text/html" id="hot_search">
+	<div class="hot">				
+		{{each prods as pro}}
+			<div><a href="javascript:void(0)">{{pro.prod}}</a></div>
+		{{/each}}				
+	</div>
+		
+	
+</script>
+<!--侧栏弹出-->
+<script type="text/html" id="list_template">
+	{{each types as msg}}
+		<div class="type">
+			<h4>{{msg.title}}</h4>
+			<div class="detal">
+				{{each msg.type as tp}}
+					<a>{{tp.name}}</a><em>|</em>
+				{{/each}}
+			</div>
+		</div>
+	{{/each}}			
+</script>
+<!--右侧新闻栏-->
+<script type="text/html" id="news_template">
+	{{each messages as message}}
+		<p><a href="javascript:void(0)">{{message.news}}</a></p>
+	{{/each}}
+</script>
+<!--商品展示-->
+<script type="text/html" id="floor_template">
+	{{each floors as floor}}
+		<div class="con">
+			<div class="floor">
+				<h3>{{floor.title}}</h3>
+				<div class="shangping">
+					{{each floor.prod as prod}}
+						<div class="products">
+							<div class="pic"><img src="{{prod.img}}"/></div>
+							<div class="price">￥<span>{{prod.price}}</span></div>
+							<div class="title"><a href="/project3/html/productDetal.html">{{prod.title}}</a></div>
+						</div>
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	{{/each}}
+</script>

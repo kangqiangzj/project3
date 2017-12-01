@@ -9,38 +9,67 @@ img{border: 0;}
 .lunbo_top{
     height: 50px;
     background: #fcffff;
-    .left{
-        width: 50%;
+    .box{
+        width: 1200px;
         height: 50px;
-        float: left;
-        img{
-            display: block;
+        margin: 0 auto;
+        .left{
+            width: 50%;
+            height: 50px;
             float: left;
-        }
-        //background: #ccc;
-       .hot{         
-           div{
-               float: left;
-               height: 50px;
-               line-height: 50px;
-               padding:0 10px;
-               font-size: 14px;
-               a{
-                   color: #666666;
-               }
-               a:hover{
-                   text-decoration: underline;
-                   color: orangered;
+            img{
+                display: block;
+                float: left;
+            }
+            //background: #ccc;
+           .hot{         
+               div{
+                   float: left;
+                   height: 50px;
+                   line-height: 50px;
+                   padding:0 10px;
+                   font-size: 14px;
+                   a{
+                       color: #666666;
+                   }
+                   a:hover{
+                       text-decoration: underline;
+                       color: orangered;
+                   }
                }
            }
-       }
-    .right{
-         width: 50%;
-        height: 50px;
-        float: right;
-        background: #ccc;
+        }
+        .right{
+             width: 50%;
+            height: 50px;
+            float: right;           
+            .left_f{
+                float: right;
+                display: flex;
+                align-items: center;
+                height: 50px;
+                input{
+                    width: 248px;
+                    height: 26px;
+                    border: none;
+                   // margin-top: 12px;
+                    background: #ccc;
+                    outline: none;
+                    padding-left: 10px;
+                }
+                .btn{
+                    width: 62px;
+                    height: 25px;
+                    margin-left:2px ;
+                    background: url(../images/search.png) no-repeat center center;
+                } 
+                .btn:hover{
+                    cursor: pointer;
+                }   
+            }
+        }
     }
-    }
+    
 }
 .banner1{
     height: 487px;
@@ -69,17 +98,36 @@ img{border: 0;}
             position: absolute;
             left: 240px;
             top: 0;
-            width: 690px;
-            padding:0 5px;
+            width: 0px;
+            overflow: hidden;
+            padding:0 10px;
             height: 479px;
-            background: pink;
-            z-index: 999;
+            background: white;
+            z-index: 9999;
             display: none;
             .type{
-                //height: 117px;
+                padding-bottom: 15px;
                 border-bottom: 1px dashed #CCCCCC;
                 h4{
                     height: 55px;
+                    line-height: 55px;
+                }
+                .detal{
+                    a{
+                        padding: 4px 8px;
+                        font-size: 12px;
+                        color: #666666;
+                        //border-right:1px solid #ccc;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                    em{
+                        font-style:normal ;
+                       font-size: 12px;
+                       color: #ccc;
+                    }
                 }
             }
         }
@@ -109,12 +157,112 @@ img{border: 0;}
     top: 0;
 }
 .banner1 .box .banner1_right{
-    width: 220px;
     height: 487px;
-    background: pink;
+    //background: pink;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 0; 
+    .top{
+        width: 188px;
+        height: 155px;
+        padding:0 16px; 
+        background: white;
+         h3{
+            height: 40px;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 40px;
+            color: #555555;
+        }
+        .news_show{
+            p{
+                height: 22px;
+                line-height: 22px;
+                a{
+                    font-size: 12px;
+                    color: #888888;
+                }
+                a:hover{
+                    color: red;
+                    text-decoration: underline;
+                }
+            }
+        
+        }
+    }  
+   .bottom{
+       height: 332px;
+       width: 220px;
+       background: #959595;
+       .h{
+           height: 60px;
+           width: 220px;
+           display: flex;
+           dl{
+               width: 73px;
+               height: 60px;
+               dt{
+                   width: 73px;
+                   height: 37px;
+                   text-align: center;
+                   img{
+                        //display: inline-block;
+                       vertical-align: middle;
+                   }
+                   img:hover{
+                       cursor: pointer;
+                       width: 25px;
+                       height: 25px;                     
+                   }
+                   span{
+                       vertical-align: middle;
+                       width: 0;
+                       height: 100%;
+                       display: inline-block;
+                   }
+               }
+               dd{
+                   padding: 0 12px;
+                   height: 22px;
+                   line-height: 22px;
+                   font-size: 12px;
+                   a{
+                       color: #ffffff;
+                   }
+                   a:hover{
+                       text-decoration: underline;
+                   }
+               }
+           }
+       }
+       .m{
+           width: 171px;
+           height: 171px;
+            overflow: hidden;
+           margin-left: 23px;
+           margin-top: 15px;
+       }
+       .b{
+           h2{
+               height: 45px;
+               text-align: center;
+               line-height: 45px;
+               color: white;
+               font-size: 16px;
+               font-weight: normal;
+           }
+           h2,p:hover{
+                cursor: pointer;
+           }
+           p{
+               color: white;
+               font-size: 12px;
+               text-align: center;
+               height: 16px;
+               line-height: 16px;
+           }
+       }
+   }
 }
 /*banner2*/
 .banner2{
@@ -135,6 +283,97 @@ img{border: 0;}
 
 .banner2 .box .bx-viewport{
     background: #393939;
+}
+.contain{
+    .con{
+        .floor{
+            width: 1200px;
+            height: 740px;
+            margin: 0 auto;
+            h3{
+                text-align: center;
+                height: 80px;
+                line-height: 80px;
+                font-weight: normal;
+            }
+            .shangping{
+                width: 1200px;
+                height: 610px;
+                display: flex;
+                 flex-wrap: wrap;
+                justify-content:space-between;
+                align-items: auto;
+                .products{                 
+//                  border: 1px solid red;              
+                    background: white;
+                    .pic{
+                        width:208px;
+                        height: 208px;
+                        overflow: hidden;
+                        cursor: pointer;
+                    }
+                    .price{
+                        color: red;
+                        font-size: 12px;
+                        padding-left: 15px;
+                        cursor: pointer;
+                    }
+                    .title{
+                        height: 40px;
+                        overflow: hidden;
+                        padding:0 15px;
+                        margin-top: 12px;
+                        font-size: 12px;
+                        line-height: 19px;
+                        cursor: pointer;
+                        a{
+                            color: #333333;
+                        }
+                        a:hover{
+                            text-decoration: underline;
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .con:nth-child(1){
+        background: white;
+        .products{
+            width: 210px;
+            height: 280px;
+            border: 5px solid #CCCCCC;
+        }
+    }
+     .con:nth-child(2){
+        background: url(../images/bg/bg1.jpg) no-repeat center center;
+        h3{
+            color: white;           
+        }
+        .products{
+            width: 220px;
+            height: 280px;
+        }
+    }
+    .con:nth-child(3){
+        background: white;
+        .products{
+            width: 210px;
+            height: 280px;
+            border: 5px solid #CCCCCC;
+        }
+    }
+    .con:nth-child(4){
+        background: url(../images/bg/bg1.jpg) no-repeat center center;
+         h3{
+            color: white;
+        }
+        .products{
+            width: 220px;
+            height: 280px;
+        }
+    }
 }
 /*lunbo1*/
 
@@ -272,7 +511,7 @@ img{border: 0;}
     width: 32px;
     height: 32px;
     text-indent: -9999px;
-    z-index: 9999;
+    z-index: 99;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {

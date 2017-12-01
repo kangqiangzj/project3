@@ -30,6 +30,9 @@ ul li {
   float: left;
   padding: 0 10px;
 }
+.header .left div a {
+  color: #555555;
+}
 
 .header .left div:nth-child(1) {
   border-right: 1px solid #CCCCCC;

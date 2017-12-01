@@ -1,0 +1,24 @@
+#main{
+	background: #ccc;
+	.box{
+		width: 800px;
+		height: 355px;
+		padding: 57px 200px;
+		margin: 0 auto;
+		#username{
+			height: 50px;
+			width: 350px;
+			padding-left: 40px;
+			border-radius: 5px;
+			border: none;
+		}
+		#password{
+			margin-top: 10px;
+			height: 50px;
+			width: 350px;
+			padding-left: 40px;
+			border-radius: 5px;
+			border: none;
+		}
+	}
+}

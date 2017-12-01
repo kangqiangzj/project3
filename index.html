@@ -9,34 +9,8 @@
 	</head>
 	<body>
 		<div id="header"></div>
-		<div id="main">
-			
+		<div id="main">			
 		</div>
-		<div id="footer"></div>
-		<!--lunbo_top-->
-		<script type="text/html" id="hot_search">
-			<div class="hot">				
-				{{each prods as pro}}
-					<div><a href="javascript:void(0)">{{pro.prod}}</a></div>
-				{{/each}}				
-			</div>
-				
-			
-		</script>
-		<!--侧栏弹出-->
-		<script type="text/html" id="list_template">
-			{{each types as msg}}
-				<div class="type">
-					<h4>{{msg.title}}</h4>
-					<div class="detal">
-						{{each msg.type as tp}
-							<a>{{tp.id}}</a>
-						{{/each}}
-					</div>
-				</div>
-			{{/each}}			
-		</script>
-		
-
+		<div id="footer"></div>		
 	</body>
 </html>

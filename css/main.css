@@ -18,34 +18,61 @@ img {
   height: 50px;
   background: #fcffff;
 }
-.lunbo_top .left {
+.lunbo_top .box {
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+}
+.lunbo_top .box .left {
   width: 50%;
   height: 50px;
   float: left;
 }
-.lunbo_top .left img {
+.lunbo_top .box .left img {
   display: block;
   float: left;
 }
-.lunbo_top .left .hot div {
+.lunbo_top .box .left .hot div {
   float: left;
   height: 50px;
   line-height: 50px;
   padding: 0 10px;
   font-size: 14px;
 }
-.lunbo_top .left .hot div a {
+.lunbo_top .box .left .hot div a {
   color: #666666;
 }
-.lunbo_top .left .hot div a:hover {
+.lunbo_top .box .left .hot div a:hover {
   text-decoration: underline;
   color: orangered;
 }
-.lunbo_top .left .right {
+.lunbo_top .box .right {
   width: 50%;
   height: 50px;
   float: right;
+}
+.lunbo_top .box .right .left_f {
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.lunbo_top .box .right .left_f input {
+  width: 248px;
+  height: 26px;
+  border: none;
   background: #ccc;
+  outline: none;
+  padding-left: 10px;
+}
+.lunbo_top .box .right .left_f .btn {
+  width: 62px;
+  height: 25px;
+  margin-left: 2px;
+  background: url(../images/search.png) no-repeat center center;
+}
+.lunbo_top .box .right .left_f .btn:hover {
+  cursor: pointer;
 }
 
 .banner1 {
@@ -78,18 +105,35 @@ img {
   position: absolute;
   left: 240px;
   top: 0;
-  width: 690px;
-  padding: 0 5px;
+  width: 0px;
+  overflow: hidden;
+  padding: 0 10px;
   height: 479px;
-  background: pink;
-  z-index: 999;
+  background: white;
+  z-index: 9999;
   display: none;
 }
 .banner1 .list .list_more .type {
+  padding-bottom: 15px;
   border-bottom: 1px dashed #CCCCCC;
 }
 .banner1 .list .list_more .type h4 {
   height: 55px;
+  line-height: 55px;
+}
+.banner1 .list .list_more .type .detal a {
+  padding: 4px 8px;
+  font-size: 12px;
+  color: #666666;
+}
+.banner1 .list .list_more .type .detal a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.banner1 .list .list_more .type .detal em {
+  font-style: normal;
+  font-size: 12px;
+  color: #ccc;
 }
 .banner1 .list li {
   height: 40px;
@@ -115,12 +159,105 @@ img {
 }
 
 .banner1 .box .banner1_right {
-  width: 220px;
   height: 487px;
-  background: pink;
   position: absolute;
   right: 0;
   top: 0;
+}
+.banner1 .box .banner1_right .top {
+  width: 188px;
+  height: 155px;
+  padding: 0 16px;
+  background: white;
+}
+.banner1 .box .banner1_right .top h3 {
+  height: 40px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #555555;
+}
+.banner1 .box .banner1_right .top .news_show p {
+  height: 22px;
+  line-height: 22px;
+}
+.banner1 .box .banner1_right .top .news_show p a {
+  font-size: 12px;
+  color: #888888;
+}
+.banner1 .box .banner1_right .top .news_show p a:hover {
+  color: red;
+  text-decoration: underline;
+}
+.banner1 .box .banner1_right .bottom {
+  height: 332px;
+  width: 220px;
+  background: #959595;
+}
+.banner1 .box .banner1_right .bottom .h {
+  height: 60px;
+  width: 220px;
+  display: flex;
+}
+.banner1 .box .banner1_right .bottom .h dl {
+  width: 73px;
+  height: 60px;
+}
+.banner1 .box .banner1_right .bottom .h dl dt {
+  width: 73px;
+  height: 37px;
+  text-align: center;
+}
+.banner1 .box .banner1_right .bottom .h dl dt img {
+  vertical-align: middle;
+}
+.banner1 .box .banner1_right .bottom .h dl dt img:hover {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+.banner1 .box .banner1_right .bottom .h dl dt span {
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  display: inline-block;
+}
+.banner1 .box .banner1_right .bottom .h dl dd {
+  padding: 0 12px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+}
+.banner1 .box .banner1_right .bottom .h dl dd a {
+  color: #ffffff;
+}
+.banner1 .box .banner1_right .bottom .h dl dd a:hover {
+  text-decoration: underline;
+}
+.banner1 .box .banner1_right .bottom .m {
+  width: 171px;
+  height: 171px;
+  overflow: hidden;
+  margin-left: 23px;
+  margin-top: 15px;
+}
+.banner1 .box .banner1_right .bottom .b h2 {
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+}
+.banner1 .box .banner1_right .bottom .b h2, .banner1 .box .banner1_right .bottom .b p:hover {
+  cursor: pointer;
+}
+.banner1 .box .banner1_right .bottom .b p {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  height: 16px;
+  line-height: 16px;
 }
 
 /*banner2*/
@@ -144,6 +281,93 @@ img {
 
 .banner2 .box .bx-viewport {
   background: #393939;
+}
+
+.contain .con .floor {
+  width: 1200px;
+  height: 740px;
+  margin: 0 auto;
+}
+.contain .con .floor h3 {
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+  font-weight: normal;
+}
+.contain .con .floor .shangping {
+  width: 1200px;
+  height: 610px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: auto;
+}
+.contain .con .floor .shangping .products {
+  background: white;
+}
+.contain .con .floor .shangping .products .pic {
+  width: 208px;
+  height: 208px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.contain .con .floor .shangping .products .price {
+  color: red;
+  font-size: 12px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.contain .con .floor .shangping .products .title {
+  height: 40px;
+  overflow: hidden;
+  padding: 0 15px;
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 19px;
+  cursor: pointer;
+}
+.contain .con .floor .shangping .products .title a {
+  color: #333333;
+}
+.contain .con .floor .shangping .products .title a:hover {
+  text-decoration: underline;
+  color: red;
+}
+.contain .con:nth-child(1) {
+  background: white;
+}
+.contain .con:nth-child(1) .products {
+  width: 210px;
+  height: 280px;
+  border: 5px solid #CCCCCC;
+}
+.contain .con:nth-child(2) {
+  background: url(../images/bg/bg1.jpg) no-repeat center center;
+}
+.contain .con:nth-child(2) h3 {
+  color: white;
+}
+.contain .con:nth-child(2) .products {
+  width: 220px;
+  height: 280px;
+}
+.contain .con:nth-child(3) {
+  background: white;
+}
+.contain .con:nth-child(3) .products {
+  width: 210px;
+  height: 280px;
+  border: 5px solid #CCCCCC;
+}
+.contain .con:nth-child(4) {
+  background: url(../images/bg/bg1.jpg) no-repeat center center;
+}
+.contain .con:nth-child(4) h3 {
+  color: white;
+}
+.contain .con:nth-child(4) .products {
+  width: 220px;
+  height: 280px;
 }
 
 /*lunbo1*/
@@ -273,7 +497,7 @@ img {
   width: 32px;
   height: 32px;
   text-indent: -9999px;
-  z-index: 9999;
+  z-index: 99;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {
