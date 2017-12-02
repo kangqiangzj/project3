@@ -1,0 +1,63 @@
+#main{  
+    background: #ccc;
+    .box{
+        width: 800px;
+        height: 500px;
+        padding: 57px 200px;
+        margin: 0 auto;
+        background: white;
+        p{
+            padding-left: 140px;
+            label{
+                display: inline-block;
+                width: 80px;
+                height: 50px;
+                span{
+                    color: red;
+                }
+            }
+            input{
+                height: 40px;
+                width: 350px;
+                padding-left: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                outline: none;
+                font-size: 16px;              
+            }
+            .username{
+                    padding-left: 15px;
+                    font-size: 12px;
+                }
+        }
+        .p1{
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 50px;
+            padding-left:0;
+        }
+        .confirm{
+            height: 50px;
+            line-height: 50px;
+            font-size: 12px;
+            padding-left: 380px;
+//         a{
+//             color: red;
+//         }
+        }
+        .zhuce{
+            margin-top: 50px;
+             padding-left: 326px;
+            .regs{
+                border-radius: 5px;
+                border: none;
+                color: white;
+                height: 49px;
+                width: 160px;
+                font-size: 20px;
+                background: black;
+            }
+        }
+         
+    }
+}

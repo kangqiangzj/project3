@@ -1,24 +1,114 @@
-#main{
-	background: #ccc;
+#main{	
+    background: #ccc;
 	.box{
 		width: 800px;
 		height: 355px;
 		padding: 57px 200px;
 		margin: 0 auto;
+		background: white;
+		display: flex;
+		justify-content: space-between;
+		h4{
+		    padding-left: 40px;
+		    color: #555555;
+		    font-weight: normal;
+		}
 		#username{
-			height: 50px;
+			height: 48px;
 			width: 350px;
 			padding-left: 40px;
 			border-radius: 5px;
-			border: none;
+			border: 1px solid #ccc;
+			outline: none;
+			font-size: 16px;
+			background: url(../images/log_03.png) no-repeat 10px center;
 		}
 		#password{
-			margin-top: 10px;
-			height: 50px;
+			margin-top: 20px;
+			height: 48px;
 			width: 350px;
 			padding-left: 40px;
 			border-radius: 5px;
-			border: none;
+			font-size: 16px;
+			outline: none;
+			background: url(../images/log_06.png) no-repeat 10px center;
+			border: 1px solid #ccc;
+		}
+		p{
+		    display: flex;
+		    align-items: center;
+		    justify-content: space-between;
+		    width:397px;
+		    height: 75px; 
+    		#checkma{
+    		    width: 152px;
+    		    height: 48px;
+    		    border: 1px solid #ccc;
+    		    padding-left: 40px;
+                border-radius: 5px;
+                font-size: 16px;
+                outline: none;
+                margin-top: 20px;
+                background: url(../images/log_08.png) no-repeat 10px center;
+    		}
+    		#yzm{
+    		        display: inline-block;  
+    		        width: 80px;
+                    height: 50px;
+                    border: 2px solid #ccc;
+                    margin-top: 15px;
+    		    img{
+    		       
+    		        width: 80px;
+    		        height: 50px;
+    		    }
+    		}
+    		#tishi{
+    		    display:inline-block;
+    		    margin-top: 15px;
+    		    width: 80px;
+    		    height: 50px;
+    		    font-size:12px;
+    		    line-height: 50px;
+    		}
+    	}
+		#login{
+		    width: 150px;
+		    height: 46px;
+		    background: black;
+		    color: white;
+		    border: none;
+		    border-radius: 5px;
+		    margin-top: 20px;
+		}
+		a{
+		    color: #ccc;		   
+		}
+		#remem{
+		    margin-left: 30px;
+		}
+		#forget{
+		    margin-left: 35px;
+		}
+		.right_login{
+		    p{
+		        width: 200px;
+		    }
+		    padding-top: 60px;
+		    margin-left: 30px;
+		    .register{
+		        text-align: center;
+		        display: block;
+		        width: 150px;
+                height: 46px;
+                line-height: 46px;
+                background: black;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                margin-top: 20px;
+                cursor: pointer;
+		    }
 		}
 	}
 }

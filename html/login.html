@@ -15,9 +15,16 @@
 					<h4>会员登录</h4>
 					<input type="text" id="username" placeholder="用户名"/><br>
 					<input type="password" id="password" placeholder="密码"/><br>
-					<input type="text" id="checkma" placeholder="验证码"/><span id="yzm"></span><br>
-					<input type="submit" value="登录"/><label for=""><a href="javascript:void(0)">记住密码</a></label>
+					<p><input type="text" id="checkma" placeholder="验证码"/><span id="yzm"><img src=""/></span><span id="tishi"></span></p>
+					<input type="submit" value="登录" id="login"/>
+					<label for="" id="remem"><input type="checkbox" id="remember"/><a href="javascript:void(0)">记住密码</a></label>
+					<a href="javascript:void(0)" id="forget">忘记密码</a>
+					
 				</form>
+				<div class="right_login">
+					<p>还没有尚酷运动账号？</p>
+					<p><span class="register">请先注册</span></p>
+				</div>
 			</div>
 		</div>
 		<div id="footer"></div>

@@ -1,0 +1,59 @@
+#main {
+  background: #ccc;
+}
+#main .box {
+  width: 800px;
+  height: 500px;
+  padding: 57px 200px;
+  margin: 0 auto;
+  background: white;
+}
+#main .box p {
+  padding-left: 140px;
+}
+#main .box p label {
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+}
+#main .box p label span {
+  color: red;
+}
+#main .box p input {
+  height: 40px;
+  width: 350px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+#main .box p .username {
+  padding-left: 15px;
+  font-size: 12px;
+}
+#main .box .p1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+  padding-left: 0;
+}
+#main .box .confirm {
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+  padding-left: 380px;
+}
+#main .box .zhuce {
+  margin-top: 50px;
+  padding-left: 326px;
+}
+#main .box .zhuce .regs {
+  border-radius: 5px;
+  border: none;
+  color: white;
+  height: 49px;
+  width: 160px;
+  font-size: 20px;
+  background: black;
+}
