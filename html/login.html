@@ -6,6 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
 		<script src="../lib/requirejs/require.js" data-main="../js/login"></script>
+		<script src="../lib/jquery/jquery-1.12.4.min.js"></script>
+		<script src="../lib/jquery/jquery_plugins/jquery.cookie.js"></script>
 	</head>
 	<body>
 		<div id="header"></div>
@@ -13,10 +15,10 @@
 			<div class="box">
 				<form action="" method="post">
 					<h4>会员登录</h4>
-					<input type="text" id="username" placeholder="用户名"/><br>
+					<input type="text" id="username" placeholder="用户名" autocomplete="off"/><br>
 					<input type="password" id="password" placeholder="密码"/><br>
 					<p><input type="text" id="checkma" placeholder="验证码"/><span id="yzm"><img src=""/></span><span id="tishi"></span></p>
-					<input type="submit" value="登录" id="login"/>
+					<input type="button" value="登录" id="login"/>
 					<label for="" id="remem"><input type="checkbox" id="remember"/><a href="javascript:void(0)">记住密码</a></label>
 					<a href="javascript:void(0)" id="forget">忘记密码</a>
 					
@@ -28,5 +30,24 @@
 			</div>
 		</div>
 		<div id="footer"></div>
+		<script type="text/javascript">
+			$("#login").on("click",function(){
+				$.get("/project3/php/login.php", { username: $("#username").val(), password: $("#password").val()},
+				  function(respData){
+				  	console.log(respData);
+				   	if (respData.status === 1) {
+							// 登录成功，将登录成功用户数据保存到 cookie 中
+							alert("成功");
+							var user = respData.data;
+							$.cookie("login_user", JSON.stringify(user), {path:"/"});
+							// 跳转到个人信息页面
+							location = "/project3/index.html";
+						} else {
+							//$("#error").innerText = "用户名或密码错误";
+							alert("用户名或密码错误");
+						}
+				 },"json");
+			});
+		</script>
 	</body>
 </html>
