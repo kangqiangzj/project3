@@ -32,6 +32,10 @@
   padding-left: 15px;
   font-size: 12px;
 }
+#main .box p .emailshow, #main .box p .password, #main .box p .confirmpwd0 {
+  padding-left: 15px;
+  font-size: 12px;
+}
 #main .box .p1 {
   text-align: center;
   font-size: 30px;

@@ -12,25 +12,25 @@
 		<div id="main">
 			<div class="box">
 				<p class="p1">会员注册</p>
-				<form action="" method="post">
+				<form action="" method="get">
 					<p>
 						<label for="">用户名<span>*</span></label>
-						<input type="text" /><span class="username">用户名请用 英文字母 下划线或数字</span>
+						<input type="text" id="username" placeholder="请输入用户名"/><span class="username"></span>
 					</p>
 					<p>
 						<label for="">密码<span>*</span></label>
-						<input type="text" /><span class="uesrname"></span>
+						<input type="password" id="password" placeholder="请输入密码"/><span class="password"></span>
 					</p>
 					<p>
 						<label for="">密码确认<span>*</span></label>
-						<input type="text" /><span class="uesrname"></span>
+						<input type="password" id="confirmpwd" placeholder="请确认密码"/><span class="confirmpwd0"></span>
 					</p>
 					<p>
 						<label for="">邮箱<span>*</span></label>
-						<input type="text" /><span class="uesrname"></span>
+						<input type="text" class="email" placeholder="请输入邮箱"/><span class="emailshow"></span>
 					</p>			
 					<div class="confirm"><input type="checkbox" id="ck"/>我已阅读并同意 <a href="javascript:void(0)">《必要服务协议》</a></div>
-					<div class="zhuce"><input type="submit" value="提交" class="regs"/></div>
+					<div class="zhuce"><input type="button" value="提交" class="regs"/></div>
 				</form>
 			</div>
 		</div>

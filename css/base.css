@@ -38,15 +38,13 @@ ul li {
   border-right: 1px solid #CCCCCC;
   margin-left: 20px;
 }
-.header .left div:nth-child(1) h5{
-	color: #ccc;
-	margin: 0;
-	padding: 0;
+.header .left div:nth-child(1) .h5 {
+  color: #ccc;
 }
-.header .left div:nth-child(1) h5:hover{
-	color: red;
-	cursor: pointer;
+.header .left div:nth-child(1) .h5:hover {
+  color: red;
 }
+
 .header .right {
   width: 50%;
   height: 20px;
