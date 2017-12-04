@@ -85,10 +85,10 @@ require(["config"], function(){
 			});
 			//提交用户信息
 			$(".regs").on("click",function(){
-				console.log(usercheck);
+/*				console.log(usercheck);
 					console.log(pwdcheck);
 					console.log(conpwdcheck);
-					console.log(emailcheck);
+					console.log(emailcheck);*/
 				if(usercheck&&pwdcheck&&conpwdcheck&&emailcheck){
 					
 					if($("#ck").is(':checked')){

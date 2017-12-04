@@ -69,12 +69,46 @@ require(["config"], function(){
 		                        height: 208
 							},200);
 					});
+					// 指定id的商品在所有已选购的数组中是否存在
+					// 存在则返回其在数组中的下标，不存在返回-1
+					function exist(id, products) {
+						for (var i = 0; i < products.length; i++) {
+							if (products[i].id == id)
+								return i;
+						}
+						return -1;
+					}
 					//鼠标点击商品实现跳转
-					$(".shangping").on("click",".products",function(){
-						//location:"/project3/html/productDetal.html";
+					$(".floor").on("click",".products",function(){
+						//先清除之前的商品
+						$.cookie("products", null,{path:'/'});
+						/* 将当前点击的"加入购物车"所在盒子商品数据保存到对象中 */
+						// 获取"加入购物车"的父节点
+						var _brother = $(this).parent().prev();
+						var product = {
+							floor : _brother.text(),
+							id : $(this).children(".id0").find(".id").val(),
+							title : $(this).children(".title").find("a").text(),
+							price : $(this).children(".price").find("span").text(),
+							img : $(this).children(".pic").find("img").attr("src"),
+							amount : 1
+						};
+						/* cookie操作 */
+						$.cookie.json = true;
+						// 将 cookie 中所有购物车中的商品读取出来
+						var _products = $.cookie("products") || [];
+						// 当前商品是否已被选购过
+						var index = exist(product.id, _products);
+						if (index !== -1) { // 已选购，数量自增
+							_products[index].amount++;
+						} else { // 未选购，将当前选购商品对象添加到数组中
+							_products.push(product);
+						}
+						// 将数组重新保存回 cookie
+						$.cookie("products", _products, {expires:7, path:"/"});
 						location.assign("/project3/html/productDetal.html");
 					});
-					
+									
 				});
 				$(".m").stop().hover(function(){
 					$(".m img").animate({

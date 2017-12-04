@@ -1,0 +1,310 @@
+#main{
+    background: url("/project3/images/bg/bg.png") repeat-x;
+    .p_nav{
+        height: 55px;
+        .box{
+            width: 1200px;
+            height: 55px;
+            margin: 0 auto;
+            background: red;
+        }
+    }
+    .container{
+        //background: #eeeeee;
+        .box{
+            width: 1200px;
+            height: 4585px;
+            margin: 0 auto;
+            .left{
+                width: 250px;
+                height: 4585px;
+                float: left;
+                .top{
+                    width: 250px;
+                    height: 123px;
+                    background:yellow;
+                }
+                .people_look{
+                    width: 250px;
+                    height: 618px;
+                    margin-top: 10px;
+                    background: red;
+                }
+                .product_tuijian{
+                    width: 250px;
+                    height: 3835px;
+                    background: green;
+                }
+            }
+            .right{
+                margin-left: 8px;
+                background: white;
+                width: 940px;
+                height: 4585px;
+                float: left;
+                .buy{
+                   // background: pink;
+                    width: 940px;
+                    height: 536px;
+                    .prod_left{
+                        float: left;
+                        width: 394px;
+                        height: 536px;
+                        .prod_middle_pic{
+                            width: 350px;
+                            height: 350px;
+                            padding-left: 6px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .prod_small_pic{
+                            width: 388px;
+                            height: 91px;//104
+                            padding: 6px 6px;
+                            padding-right: 0;
+                            ul li {
+                                float: left;
+                                width: 88px;
+                                margin-left: 6px;
+                                height: 88px;
+                                border: 2px solid white;
+                                //background: url(/project3/images/prod_small.jpg) no-repeat center center;
+                                //background-size: 88px 88px;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                                &:hover{
+                                    border: 2px solid #ccc;
+                                }
+                                &:nth-child(1){
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                        .prod_big_pic{
+                            display: none;
+                        }                   
+                    }
+                    .prod_right{
+                        float: left;
+                        width: 546px;
+                        height: 536px;
+                        position: relative;
+                        .erweima{
+                            position: absolute;
+                            top: 119px;
+                            right: 76px;
+                            display:none;
+                            width: 149px;
+                            height: 149px;
+                            padding: 10px;
+                            //background: #ccc;
+                        }
+                        .p1{
+                            height: 34px;
+                            line-height: 34px;
+                            font-size: 16px;
+                        }
+                        .price0{
+                            height: 60px;
+                            width: 530px;//546
+                            //background: green;
+                            margin-top: 25px;
+                            display: flex;
+                            justify-content: space-between;
+                            padding-right: 16px;  
+                            .price0_left{
+                                width: 250px;
+                                height: 60px;
+                               // background: red;
+                                line-height: 60px;
+                                .price0_sp1{
+                                    color: #999798;
+                                    padding-left: 15px;
+                                    font-size: 14px;
+                                }
+                                .price0_sp2{
+                                    margin-left: 80px;
+                                    color: #e6323b;
+                                    font-size: 28px;
+                                    margin-right: 6px;
+                                }
+                                
+                            } 
+                            .price0_right{
+                                &:hover{
+                                    cursor: pointer;
+                                }
+                                width: 169px;
+                                height: 60px;
+                                line-height: 60px;
+                                margin-right: 60px;
+                                //background: green;
+                                p{
+                                    height: 60px;
+                                    line-height: 60px;  
+                                    font-size: 14px;
+                                    .sp_phone{
+                                        padding: 12px 15px;                                     
+                                        background: url(/project3/images/sj1.png) no-repeat center;
+                                    } 
+                                    .xiala{
+                                        padding: 12px;
+                                        background: url(/project3/images/xjt.png) no-repeat center;
+                                    }                                 
+                                }
+                                
+                            }               
+                        }
+                        .xiaoliang{
+                            height: 35px;
+                            line-height: 35px;
+                            font-size:12px ;
+                            color: #999798;
+                            border-bottom: 1px dashed #ccc;
+                            border-top: 1px dashed #ccc;
+                            display: flex;
+                            justify-content: space-around;
+                            .p1{
+                                font-size: 12px;
+                            }
+                            p{
+                                span{
+                                    padding: 3px;
+                                    color: #e33747;
+                                }
+//                              span:nth-child(2){
+//                                   padding-left: 50px;
+//                                   
+//                                   border-left: 1px solid #999798;   
+//                              }
+                            }
+
+                        }
+                        .chima{
+                            margin-top:6px;
+                            height: 41px;
+                            line-height: 41px;
+                            .s1{
+                               color: #999798;
+                               font-size: 12px;
+                               margin-right: 55px;
+                            }
+                            .chima01,.chima02,.chima03{
+                                padding: 5px;
+                                border: 2px solid #999798;
+                                margin-right: 20px;
+                                font-size: 12px;
+                                cursor: pointer;
+                                font-weight: 700;
+                            }
+                        }
+                        .color{
+                            height: 41px;
+                            line-height: 41px;
+                            .s1{
+                               color: #999798;
+                               font-size: 12px;
+                               margin-right: 55px;
+                            }
+                            .color01,.color02,.color03{
+                                padding: 5px;
+                                border: 2px solid #999798;
+                                margin-right: 20px;
+                                font-size: 12px;
+                                cursor: pointer;
+                                font-weight: 700;
+                            }
+                        }
+                        .buy_amount{
+                            width: 276px;
+                            height: 72px;
+                            line-height: 72px;
+                            display: flex;
+                            justify-content: space-between;
+                            .buy_amount_left{
+                                color: #999798;
+                                height: 72px;
+                                line-height: 72px;
+                                font-size:12px;
+                            }
+                            .buy_amount_middle{
+                                height: 49px;
+                                width: 70px;
+                                margin-top: 12px;
+                                border: 1px solid #ccc;
+                                .buy_amount_middle_left{
+                                    width: 52px;
+                                    height: 49px;
+                                    float: left;
+                                    text-align: center;
+                                    line-height: 49px;
+                                }
+                                .buy_amount_middle_right{
+                                    width: 18px;
+                                    height: 47px;
+                                    float: left;
+                                    .top,.bottom{
+                                        border: 1px solid #ccc;
+                                        height: 23px;
+                                        line-height: 23px;
+                                        width: 18px;
+                                        border-right:none;
+                                        text-align: center;
+                                    }
+                                }                              
+                            }
+                            .buy_amount_right{
+                                .prod_price{
+                                    color: #ef3b3e;
+                                }
+                            }
+                        }
+                        .prod_bottom{
+                            width: 374px;
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 15px;
+                            .buyquickly{
+                                width: 180px;
+                                height: 42px;
+                                padding: 5px 10px;
+                                line-height: 42px;
+                                text-align: center;
+                            }
+                            .add_to_cart{
+                               width: 180px;
+                                height: 42px; 
+                                line-height: 42px;
+                                padding: 5px 10px;
+                                text-align: center;
+                            }
+                        }
+                    }   
+                }
+                .product_jieshao{
+                    width: 940px;
+                    height: 4049px;
+                    h4{
+                        margin: 0;
+                        height: 64px;
+                        font-size: 18px;
+                        font-weight: normal;
+                        line-height: 64px;
+                        background: red;
+                        padding-left: 20px;
+                    }
+                    .xijie{
+                        padding-left: 80px;
+                        img{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

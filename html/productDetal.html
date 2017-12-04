@@ -4,13 +4,126 @@
 		<meta charset="UTF-8">
 		<title>商品详情</title>
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/productDetal.css"/>
 		<script src="../lib/requirejs/require.js" data-main="../js/productDetal"></script>
 	</head>
 	<body>
 		<div id="header"></div>
 		<div id="main">
-			
+			<div class="p_nav">
+				<div class="box"></div>
+			</div>
+			<div class="container">
+				<div class="box">
+					<div class="left">
+						<div class="top">
+							
+						</div>
+						<div class="people_look">
+							
+						</div>
+						<div class="product_tuijian">
+							
+						</div>
+					</div>
+					<div class="right">
+						<div class="buy">
+							
+						</div>
+						<div class="product_jieshao">
+							<h4>产品介绍</h4>
+							<div class="xijie">
+								<img src="/project3/images/detal.png" title="商品详情"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div id="footer"></div>
+		<!--定义模板显示商品导航信息-->
+		<script type="text/html" id="product_template">
+			<span class="sp1">首页</span>>>
+			<span class="sp2">{{prod.floor}}</span>>>
+			<span class="sp3">{{prod.title}}</span>
+		</script>
+		<!--定义模板显示商品所有信息-->
+		<script type="text/html" id="product_detal_template">
+			<div class="prod_left">
+				<div class="prod_middle_pic">
+					<img src="{{prod.img}}"/>
+				</div>
+				<div class="prod_small_pic">
+					<ul>
+						<li><img src="{{prod.img}}"/></li>
+						<li><img src="{{prod.img}}"/></li>
+						<li><img src="{{prod.img}}"/></li>
+						<li><img src="{{prod.img}}"/></li>
+					</ul>
+					<div class="links">
+						
+					</div>
+				</div>
+				<div class="prod_big_pic">
+					<img src="{{prod.img}}"/>
+				</div>
+			</div>
+			<div class="prod_right">
+				<p class="p1">{{prod.title}}</p>
+				<div class="erweima"><img src="/project3/images/erweima.png"/></div>
+				
+				<div class="price0">
+					<div class="price0_left">
+						<span class="price0_sp1">价格</span><span class="price0_sp2">￥{{prod.price}}</span><span class="price0_sp3">元</span>
+					</div>
+					<div class="price0_right">
+						<p>
+							<span class="sp_phone"></span>
+							去手机购买
+							<span class="xiala"></span>
+						</p>	
+					</div>					
+				</div>
+				<div class="xiaoliang">
+					<p class="p1">累计销量<span>4</span></p>
+					<p>|</p>
+					<p class="p2">累计评价<span>0</span></p>
+					<p>|</p>
+					<p class="p3">送积分<span>349</span></p>
+				</div>
+				<div class="chima">
+					<p class="chima_p1"><span class="s1">尺码</span><span class="chima01">37码</span><span class="chima02">38码</span><span class="chima03">39码</span></p>				
+				</div>
+				<div class="color">
+					<p class="color_p1"><span class="s1">颜色</span><span class="color01">红色</span><span class="color02">蓝色</span></p>
+				</div>
+				<div class="buy_amount">
+					<div class="buy_amount_left">
+						<span class="buy_amount_span1">购买数量</span>
+					</div>
+					
+					<div class="buy_amount_middle">
+						<div class="buy_amount_middle_left">
+							{{prod.amount}}
+						</div>
+						<div class="buy_amount_middle_right">
+							<div class="top">+</div>
+							<div class="bottom">-</div>
+						</div>						
+					</div>
+					<div class="buy_amount_right">
+						<p>总计<span class="prod_price">￥{{prod.price}}</span></p>
+					</div>
+				</div>
+				<div class="prod_bottom">
+					<div class="buyquickly">
+						立即购买
+					</div>
+					<div class="add_to_cart">
+						加入购物车
+					</div>
+				</div>
+			</div>
+		</script>
 	</body>
 </html>

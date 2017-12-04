@@ -25,16 +25,17 @@ ul li{
      a{
         color:#555555;
     } 
-   
 }
 .header .left div:nth-child(1){
     border-right: 1px solid #CCCCCC;
-    margin-left: 20px;
-    .h5{
+    margin-left: 20px;   
+    h5{
         color: #ccc;
+        margin: 0;
     }  
-    .h5:hover{
+    h5:hover{
         color: red;
+        cursor: pointer;
     }
 }
 .header .right{
