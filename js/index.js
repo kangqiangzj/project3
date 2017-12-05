@@ -58,13 +58,13 @@ require(["config"], function(){
 					$(".contain").html(floor);	
 					
 					//商品列表鼠标移入移出
-					$(".contain .pic img").stop().hover(function(){
-						$(this).animate({
+					$(".contain .pic img").hover(function(){
+						$(this).stop().animate({
 							width: 215,
 	                        height: 215
 						},200);
 					},function(){
-							$(this).animate({
+							$(this).stop().animate({
 								width: 208,
 		                        height: 208
 							},200);
@@ -110,16 +110,16 @@ require(["config"], function(){
 					});
 									
 				});
-				$(".m").stop().hover(function(){
-					$(".m img").animate({
+				$(".m").hover(function(){
+					$(".m img").stop().animate({
 						width:180,
 						height:180
-					},500)
+					},100)
 				},function(){
-					$(".m img").animate({
+					$(".m img").stop().animate({
 						width:170,
 						height:170
-					},500)
+					},100)
 				});		
 			})
 		});

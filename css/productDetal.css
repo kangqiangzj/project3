@@ -8,7 +8,11 @@
   width: 1200px;
   height: 55px;
   margin: 0 auto;
-  background: red;
+  line-height: 55px;
+}
+#main .p_nav .box .sp3 {
+  color: #69646a;
+  font-size: 14px;
 }
 #main .container .box {
   width: 1200px;
@@ -20,21 +24,76 @@
   height: 4585px;
   float: left;
 }
-#main .container .box .left .top {
+#main .container .box .left .title_top {
   width: 250px;
   height: 123px;
-  background: yellow;
+  background: white;
+}
+#main .container .box .left .title_top h5 {
+  font-weight: normal;
+  text-align: center;
+  line-height: 123px;
+  font-size: 26px;
+  margin: 0;
 }
 #main .container .box .left .people_look {
   width: 250px;
   height: 618px;
   margin-top: 10px;
-  background: red;
+  background: white;
+}
+#main .container .box .left .people_look p {
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  padding: 0 8px;
+  justify-content: space-between;
+}
+#main .container .box .left .people_look p .p_sp1 {
+  width: 80px;
+  font-size: 16px;
+  margin: 0;
+}
+#main .container .box .left .people_look p .p_sp2 {
+  display: block;
+  width: 30px;
+  font-size: 12px;
+  color: #656668;
+}
+#main .container .box .left .people_look p .p_sp2:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#main .container .box .left .people_look .p dt {
+  padding: 24px;
+}
+#main .container .box .left .people_look .p dt img {
+  width: 200px;
+  height: 200px;
+}
+#main .container .box .left .people_look .p dd p:nth-child(1) {
+  padding: 0 85px;
+}
+#main .container .box .left .people_look .p dd p:nth-child(1) #s1 {
+  cursor: pointer;
+  color: #ce0100;
+}
+#main .container .box .left .people_look .p dd p:nth-child(1) #s1:hover {
+  text-decoration: underline;
+}
+#main .container .box .left .people_look .p dd p:nth-child(1) #s2 {
+  cursor: pointer;
+  color: #ccc;
+  text-decoration: line-through;
+}
+#main .container .box .left .people_look .p dd p:nth-child(2) {
+  padding-left: 90px;
+  text-align: center;
+  font-size: 18px;
 }
 #main .container .box .left .product_tuijian {
   width: 250px;
   height: 3835px;
-  background: green;
 }
 #main .container .box .right {
   margin-left: 8px;
@@ -56,6 +115,7 @@
   width: 350px;
   height: 350px;
   padding-left: 6px;
+  overflow: hidden;
 }
 #main .container .box .right .buy .prod_left .prod_middle_pic img {
   width: 100%;
@@ -86,6 +146,13 @@
 }
 #main .container .box .right .buy .prod_left .prod_big_pic {
   display: none;
+}
+#main .container .box .right .buy .prod_left .links {
+  padding-top: 30px;
+  padding-left: 250px;
+}
+#main .container .box .right .buy .prod_left .links img {
+  cursor: pointer;
 }
 #main .container .box .right .buy .prod_right {
   float: left;
@@ -173,6 +240,7 @@
 #main .container .box .right .buy .prod_right .chima {
   margin-top: 6px;
   height: 41px;
+  padding-left: 15px;
   line-height: 41px;
 }
 #main .container .box .right .buy .prod_right .chima .s1 {
@@ -191,6 +259,7 @@
 #main .container .box .right .buy .prod_right .color {
   height: 41px;
   line-height: 41px;
+  padding-left: 15px;
 }
 #main .container .box .right .buy .prod_right .color .s1 {
   color: #999798;
@@ -217,6 +286,7 @@
   height: 72px;
   line-height: 72px;
   font-size: 12px;
+  padding-left: 15px;
 }
 #main .container .box .right .buy .prod_right .buy_amount .buy_amount_middle {
   height: 49px;
@@ -237,6 +307,7 @@
   float: left;
 }
 #main .container .box .right .buy .prod_right .buy_amount .buy_amount_middle .buy_amount_middle_right .top, #main .container .box .right .buy .prod_right .buy_amount .buy_amount_middle .buy_amount_middle_right .bottom {
+  cursor: pointer;
   border: 1px solid #ccc;
   height: 23px;
   line-height: 23px;
@@ -259,6 +330,10 @@
   padding: 5px 10px;
   line-height: 42px;
   text-align: center;
+  color: #f80032;
+  border: 1px solid #f80032;
+  background: #fff9ed;
+  cursor: pointer;
 }
 #main .container .box .right .buy .prod_right .prod_bottom .add_to_cart {
   width: 180px;
@@ -266,6 +341,11 @@
   line-height: 42px;
   padding: 5px 10px;
   text-align: center;
+  border: 1px solid #fe0036;
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+  background: #fe0036 url(/project3/images/cart.png) no-repeat 30px center;
 }
 #main .container .box .right .product_jieshao {
   width: 940px;
@@ -277,7 +357,6 @@
   font-size: 18px;
   font-weight: normal;
   line-height: 64px;
-  background: red;
   padding-left: 20px;
 }
 #main .container .box .right .product_jieshao .xijie {
@@ -285,4 +364,8 @@
 }
 #main .container .box .right .product_jieshao .xijie img {
   cursor: pointer;
+}
+
+.zoomContainer {
+  width: 350px !important;
 }

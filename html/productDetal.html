@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/productDetal.css"/>
 		<script src="../lib/requirejs/require.js" data-main="../js/productDetal"></script>
+		
 	</head>
 	<body>
 		<div id="header"></div>
@@ -16,11 +17,20 @@
 			<div class="container">
 				<div class="box">
 					<div class="left">
-						<div class="top">
+						<div class="title_top">
 							
 						</div>
 						<div class="people_look">
-							
+							<p><span class="p_sp1">大家都在看</span><span class="p_sp2">更多</span></p>
+							<div class="p">
+								<dl>
+									<dt><img src="/project3/images/_7195035.jpg"/></dt>
+									<dd>
+										<p><span id="s1">￥32</span><span id="s2">￥65</span></p>
+										<p>商品名称</p>
+									</dd>
+								</dl>
+							</div>
 						</div>
 						<div class="product_tuijian">
 							
@@ -47,11 +57,15 @@
 			<span class="sp2">{{prod.floor}}</span>>>
 			<span class="sp3">{{prod.title}}</span>
 		</script>
+		<!--定义模板显示侧栏-->
+		<script type="text/html" id="left_template">
+			<h5>{{prod.floor}}</h5>
+		</script>
 		<!--定义模板显示商品所有信息-->
 		<script type="text/html" id="product_detal_template">
 			<div class="prod_left">
 				<div class="prod_middle_pic">
-					<img src="{{prod.img}}"/>
+					<!--<img src=""/>-->
 				</div>
 				<div class="prod_small_pic">
 					<ul>
@@ -61,7 +75,7 @@
 						<li><img src="{{prod.img}}"/></li>
 					</ul>
 					<div class="links">
-						
+						<img src="/project3/images/weixinweibo.png"/>
 					</div>
 				</div>
 				<div class="prod_big_pic">
@@ -125,5 +139,7 @@
 				</div>
 			</div>
 		</script>
+		<!--<script src="../lib/jquery/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/project3/lib/jquery_plugins/jquery.elevateZoom-3.0.8.min.js" type="text/javascript" charset="utf-8"></script>-->
 	</body>
 </html>
