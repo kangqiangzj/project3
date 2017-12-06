@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/cart.css"/>
+		<script src="../lib/requirejs/require.js" data-main="../js/cart"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div id="main">
+			<div class="cart_head">
+				<div class="box">
+					<h3>购物车</h3>
+				</div>	
+			</div>
+			<div class="cart_title">
+				<div class="box">
+					<div class="left">
+						<div class="ck_all">
+							<input type="checkbox"id="ck_all"/>全选
+						</div>
+						<div class="prod_message">
+							商品信息
+						</div>
+					</div>
+					
+					
+					<div class="right">
+						<div class="price">
+							单价
+						</div>
+						<div class="amount">
+							数量	
+						</div>
+						<div class="xiaoji">
+							小计
+						</div>
+						<div class="opt">
+							操作
+						</div>
+					</div>
+					
+				</div>			
+			</div>
+			<div id="products_cart">
+				
+			</div>
+			<!--定义模板显示商品-->
+			<script type="text/html" id="cart_body_template">
+				{{each prods as prod}}
+				<div class="cart_body">		
+						<input type="hidden" class="id" value="{{prod.id}}"/>
+						<div class="left">
+							<div class="ck0">
+								<input type="checkbox" class="ck"/>
+							</div>
+							<div class="prod_img">
+								<img src="{{prod.img}}"/>
+							</div>
+							<div class="prod_title">
+								<p class="p1">{{prod.title}}</p>
+								<p class="p2">尺码：{{prod.chima}}</p>
+								<p class="p3">颜色：{{prod.color}}</p>
+							</div>
+						</div>
+						
+						<div class="right">
+							<div class="prod_price">
+								￥{{prod.price}}
+							</div>
+							<div class="prod_amount">
+								{{prod.amount}}
+							</div>
+							<div class="xiaoji">
+								{{prod.xiaoji}}
+							</div>
+							<div class="delete">
+								X
+							</div>
+						</div>			
+				</div>
+				{{/each}}
+				<div class="total">
+					<div class="box">
+						<div class="left">
+							合计：<span>0.00</span>
+						</div>
+						<div class="right">
+							结算
+						</div>
+					</div>
+				</div>
+			</script>
+			
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>

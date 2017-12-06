@@ -12,6 +12,7 @@ define(["jquery"], function($){
 				var img = data.showapi_res_body;
 				$("#yzm img").attr("src", img.image);
 				$("#yzm img").attr("sid", img.sid);
+				//$("#yzm img").data("sid", img.sid);*************************缓存数据
 			}
 		});
 	}

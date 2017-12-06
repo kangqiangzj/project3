@@ -297,7 +297,7 @@
                             }
                         }
                         .buy_amount{
-                            width: 276px;
+                            width: 314px;
                             height: 72px;
                             line-height: 72px;
                             
@@ -338,8 +338,13 @@
                                 }                              
                             }
                             .buy_amount_right{
-                                .prod_price{
-                                    color: #ef3b3e;
+                                p{
+                                    margin-right: 10px;
+                                    width: 100px;
+                                    height: 72px;
+                                    .prod_price{
+                                        color: #ef3b3e;
+                                    }
                                 }
                             }
                         }

@@ -275,7 +275,7 @@
   font-weight: 700;
 }
 #main .container .box .right .buy .prod_right .buy_amount {
-  width: 276px;
+  width: 314px;
   height: 72px;
   line-height: 72px;
   display: flex;
@@ -315,7 +315,12 @@
   border-right: none;
   text-align: center;
 }
-#main .container .box .right .buy .prod_right .buy_amount .buy_amount_right .prod_price {
+#main .container .box .right .buy .prod_right .buy_amount .buy_amount_right p {
+  margin-right: 10px;
+  width: 100px;
+  height: 72px;
+}
+#main .container .box .right .buy .prod_right .buy_amount .buy_amount_right p .prod_price {
   color: #ef3b3e;
 }
 #main .container .box .right .buy .prod_right .prod_bottom {
